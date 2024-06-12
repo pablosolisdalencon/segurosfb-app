@@ -11816,6 +11816,11 @@ app-automotrices .col-6 .p-3{
   border-radius:2vmin;
 }
 
+seguros-automoviles section{
+  background-color: #2e496e !important;
+  color:white;padding:3vmin;
+}
+
 @media (min-width: 400px) {
   app-automotrices .row{
     font-size: 3vmin;
