@@ -11817,8 +11817,19 @@ app-automotrices .col-6 .p-3{
 }
 
 seguros-automoviles section{
-  background-color: #2e496e !important;
+  background-color: #2e496e;
   color:white;padding:3vmin;
+}
+app-automotrices .botonLlamar{
+  background-color: #25d366 !important;
+  border-radius:2vmin;
+  padding:2vmin;
+  color:white;
+  font-weight:bolder;
+}
+app-automotrices .col-6 .p-3{
+  background-color: white;
+  color:#2e496e;
 }
 
 @media (min-width: 400px) {
