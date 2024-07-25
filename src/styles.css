@@ -3,7 +3,15 @@
 
 html, body { height: 100%; background-color: #686A6C; color :white;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.popupSection{text-align: center; }
+.popupImage{width:100vmin;}
 
+app-automotrices .col-6 .p-3:hover{
+  cursor: pointer;
+  background-color: #e3b03a;
+  color:white;
+  
+}
 /* app.component.css */
 .home-container {
     padding: 20px;
@@ -11760,7 +11768,7 @@ html {
   }
 }
 body { background-color: #686A6C !important; color :white;}
-
+app-automotrices .iconosvg{width:3em}
 app-nav .navbar{background-color: #2e496e !important;color: white !important;}
 app-nav .navbar div ul li a{color: white !important;}
 app-nav .navbar div a span img{height:20vmin}
@@ -11833,6 +11841,7 @@ app-automotrices .col-6 .p-3{
 }
 
 @media (min-width: 400px) {
+  .popupImage{width:80vmin;}
   app-automotrices .row{
     font-size: 3vmin;
   }
@@ -11848,11 +11857,8 @@ app-automotrices .col-6 .p-3{
     background-color: white;
     color:#2e496e;
   }
-  app-automotrices .col-6 .p-3:hover{
-    background-color: #2e496e;
-    color:white;
-    
-  }
+  
+  
   app-automotrices .bigIcon{
     font-size:8vmin;
   }
@@ -11869,6 +11875,7 @@ app-automotrices .col-6 .p-3{
 @media (min-width: 700px) {
   app-automotrices .row{
     font-size: 1.5vmin;
+    
   }
   app-automotrices .row h2{
     font-size: 3vmin;
@@ -11882,11 +11889,7 @@ app-automotrices .col-6 .p-3{
     background-color: white;
     color:#2e496e;
   }
-  app-automotrices .col-6 .p-3:hover{
-    background-color: #2e496e;
-    color:white;
-    
-  }
+
   app-automotrices .bigIcon{
     font-size:4vmin;
   }

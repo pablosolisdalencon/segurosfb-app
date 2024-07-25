@@ -27,7 +27,7 @@ export class AutomotricesComponent {
   constructor(public dialog: MatDialog) { }
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, animal: this.animal }
     });
 
@@ -39,7 +39,7 @@ export class AutomotricesComponent {
   // Bloque de código para seguros-accidentes-personales
   openDialogForAccidentesPersonales(): void {
     const dialogRef = this.dialog.open(SegurosAccidentesPersonalesComponent, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, entity: 'seguros-accidentes-personales' }
     });
 
@@ -52,7 +52,7 @@ export class AutomotricesComponent {
   // Bloque de código para seguros-automotriz
   openDialogForAutomotriz(): void {
     const dialogRef = this.dialog.open(SegurosAutomotrizComponent, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, entity: 'seguros-automotriz' }
     });
 
@@ -64,7 +64,7 @@ export class AutomotricesComponent {
   // Bloque de código para seguros-construccion
   openDialogForConstruccion(): void {
     const dialogRef = this.dialog.open(SegurosConstruccionComponent, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, entity: 'seguros-construccion' }
     });
 
@@ -76,7 +76,7 @@ export class AutomotricesComponent {
 
   openDialogForHogar(): void {
     const dialogRef = this.dialog.open(SegurosHogarComponent, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, entity: 'seguros-hogar' }
     });
 
@@ -89,7 +89,7 @@ export class AutomotricesComponent {
   // Bloque de código para seguros-mascotas
   openDialogForMascotas(): void {
     const dialogRef = this.dialog.open(SegurosMascotasComponent, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, entity: 'seguros-mascotas' }
     });
 
@@ -102,7 +102,7 @@ export class AutomotricesComponent {
   // Bloque de código para seguros-motocicletas
   openDialogForMotocicletas(): void {
     const dialogRef = this.dialog.open(SegurosMotocicletasComponent, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, entity: 'seguros-motocicletas' }
     });
 
@@ -115,7 +115,7 @@ export class AutomotricesComponent {
   // Bloque de código para SOAP
   openDialogForSOAP(): void {
     const dialogRef = this.dialog.open(SegurosSOAPComponent, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, entity: 'seguros-soap' }
     });
 
@@ -126,7 +126,7 @@ export class AutomotricesComponent {
   }
   openDialogForVehiculosPesados(): void {
     const dialogRef = this.dialog.open(SegurosVehiculosPesadosComponent, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, entity: 'seguros-vehiculos-pesados' }
     });
 
@@ -137,7 +137,7 @@ export class AutomotricesComponent {
   }
   openDialogForRCI(): void {
     const dialogRef = this.dialog.open(SegurosRCInternacionalComponent, {
-      width: '80%',
+      width: '200%',
       data: { name: this.name, entity: 'seguros-rc-internacional' }
     });
 
@@ -146,7 +146,30 @@ export class AutomotricesComponent {
       // Maneja el resultado aquí si es necesario
     });
   }
-
+  openDialogForPatrimonial(): void {
+    const dialogRef = this.dialog.open(SegurosPatrimonialComponent, {
+      width: '200%',
+      data: { name: this.name, entity: 'seguros-patrimonial' }
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // Maneja el resultado aquí si es necesario
+    });
+  }
+  
+  openDialogForTransporteCarga(): void {
+    const dialogRef = this.dialog.open(SegurosTransporteCargaComponent, {
+      width: '200%',
+      data: { name: this.name, entity: 'seguros-transporte-carga' }
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // Maneja el resultado aquí si es necesario
+    });
+  }
+  
 
 
 }
