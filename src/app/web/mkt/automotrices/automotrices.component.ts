@@ -169,6 +169,17 @@ export class AutomotricesComponent {
       // Maneja el resultado aquí si es necesario
     });
   }
+  openDialogForAmedida(): void {
+    const dialogRef = this.dialog.open(SegurosAmedidaComponent, {
+      width: '200%',
+      data: { name: this.name, entity: 'seguros-a-medida' }
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // Maneja el resultado aquí si es necesario
+    });
+  }
   
 
 
@@ -341,6 +352,20 @@ export class SegurosVehiculosPesadosComponent {
     this.dialogRef.close();
   }
 }
+// SegurosAmedidaComponent
+@Component({
+  selector: 'seguros-a-medida',
+  templateUrl: './seguros-a-medida.html',
+})
+export class SegurosAmedidaComponent {
+  constructor(
+    public dialogRef: MatDialogRef<SegurosAmedidaComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}
 
 
 
@@ -473,6 +498,16 @@ export class DialogForTransporteCarga {
 export class DialogForVehiculosPesados {
   constructor(
     public dialogRef: MatDialogRef<DialogForVehiculosPesados>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}
+export class DialogForAmedida {
+  constructor(
+    public dialogRef: MatDialogRef<DialogForAmedida>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData
   ) {}
 

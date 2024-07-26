@@ -2,9 +2,33 @@
 /*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
 
 html, body { height: 100%; background-color: #686A6C; color :white;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; padding-top:8vmin}
 .popupSection{text-align: center; }
 .popupImage{width:100vmin;}
+.msgDivider{
+  color: #e3b03a;
+  font-size: 4vmin;
+  text-align: center;
+  padding: 5vmin;
+  margin: 8vmin;
+  border: 1px solid rgb(0 0 0 / 27%);
+  box-shadow: 1px 1px 110px black;
+  border-radius: 9vmin;
+  background-color: #505d6d;
+  font-style: italic;
+  text-shadow: 1px -1px 1px #212529;
+}
+#iframeApp{
+  border: 5px solid black;
+  margin: 8vmin;
+  box-shadow: 20px 20px 20px black;
+  border-radius: 35px;
+}
+/*#nosotros,#seguros{padding-top:25vmin;}*/
+#logoMaster{width:34vmin;}
+app-automotrices .col-6{
+  width:50%;
+}
 
 app-automotrices .col-6 .p-3:hover{
   cursor: pointer;
@@ -11771,7 +11795,7 @@ body { background-color: #686A6C !important; color :white;}
 app-automotrices .iconosvg{width:3em}
 app-nav .navbar{background-color: #2e496e !important;color: white !important;}
 app-nav .navbar div ul li a{color: white !important;}
-app-nav .navbar div a span img{height:20vmin}
+app-nav .navbar div a span img{height:12vmin}
 
 app-contacto .botonLlamar{
   background-color: #25d366;
@@ -11840,37 +11864,7 @@ app-automotrices .col-6 .p-3{
   color:#2e496e;
 }
 
-@media (min-width: 400px) {
-  .popupImage{width:80vmin;}
-  app-automotrices .row{
-    font-size: 3vmin;
-  }
-  app-automotrices .row h2{
-    font-size: 6vmin;
-  }
-  app-automotrices .row h2 i{
-    font-size: 10vmin;
-  }
 
-  app-automotrices .col-6 .p-3{
-    padding:5vmin;
-    background-color: white;
-    color:#2e496e;
-  }
-  
-  
-  app-automotrices .bigIcon{
-    font-size:8vmin;
-  }
-
-  app-automotrices .botonLlamar{
-    background-color: #25d366;
-    border-radius:2vmin;
-    padding:2vmin;
-    color:white;
-    font-weight:bolder;
-  }
-}
 
 @media (min-width: 700px) {
   app-automotrices .row{
@@ -11904,4 +11898,56 @@ app-automotrices .col-6 .p-3{
     color:white;
     font-weight:bolder;
   }
+}
+
+@media (max-width: 450px) {
+  .popupImage{width:80vmin;}
+  #logoMaster{width:80vmin;}
+  app-automotrices .col-6{
+    width:100vmin;
+  }
+  
+  app-automotrices .row{
+    font-size: 3vmin;
+  }
+  app-automotrices .row h2{
+    font-size: 6vmin;
+  }
+  app-automotrices .row h2 i{
+    font-size: 10vmin;
+  }
+ 
+  app-automotrices .col-6 .p-3{
+    padding:5vmin;
+    background-color: white;
+    color:#2e496e;
+  }
+  
+  
+  app-automotrices .bigIcon{
+    font-size:8vmin;
+  }
+
+  app-automotrices .botonLlamar{
+    background-color: #25d366;
+    border-radius:2vmin;
+    padding:2vmin;
+    color:white;
+    font-weight:bolder;
+  }
+}
+app-nosotros p{padding-left:30vmin;padding-right:30vmin;font-size:2vmin}
+app-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: -webkit-fill-available;
+}
+
+@media(max-width:1155px){
+  .popupImage{width:80vmin;}
+  app-nosotros p{padding-left:10vmin;padding-right:10vmin;font-size:4vmin}
+  
+
 }

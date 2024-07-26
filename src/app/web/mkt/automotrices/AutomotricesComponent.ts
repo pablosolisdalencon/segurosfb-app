@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogOverviewExampleDialog, DialogForAccidentesPersonales, DialogForAutomotriz, DialogForConstruccion, DialogForHogar, DialogForMascotas, DialogForMotocicletas, DialogForSOAP, DialogForVehiculosPesados, DialogForRCI, DialogForTransporteCarga, DialogForPatrimonial } from './automotrices.component';
+import { DialogOverviewExampleDialog, DialogForAccidentesPersonales, DialogForAutomotriz, DialogForConstruccion, DialogForHogar, DialogForMascotas, DialogForMotocicletas, DialogForSOAP, DialogForVehiculosPesados, DialogForRCI, DialogForTransporteCarga, DialogForPatrimonial, DialogForAmedida } from './automotrices.component';
 
 /**
  * @title Dialog Overview
@@ -158,6 +158,17 @@ export class AutomotricesComponent {
     const dialogRef = this.dialog.open(DialogForTransporteCarga, {
       width: '200%',
       data: { name: this.name, entity: 'seguros-transporte-carga' }
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // Maneja el resultado aquí si es necesario
+    });
+  }
+  openDialogForAmedida(): void {
+    const dialogRef = this.dialog.open(DialogForAmedida, {
+      width: '200%',
+      data: { name: this.name, entity: 'seguros-a-medida' }
     });
   
     dialogRef.afterClosed().subscribe(result => {
